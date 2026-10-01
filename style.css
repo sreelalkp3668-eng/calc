@@ -15,50 +15,6 @@ body {
 
     min-height: 100vh;
 }
-
-
-/* =========================
-   CARTOON EMOJIS
-   ========================= */
-
-.cartoon {
-    position: fixed;
-
-    font-size: 55px;
-
-    z-index: 1;
-
-    pointer-events: none;
-
-    animation: bounce 3s infinite ease-in-out;
-}
-
-.cartoon1 {
-    top: 5%;
-    left: 5%;
-}
-
-.cartoon2 {
-    top: 10%;
-    right: 5%;
-}
-
-.cartoon3 {
-    bottom: 8%;
-    left: 5%;
-}
-
-.cartoon4 {
-    bottom: 8%;
-    right: 5%;
-}
-
-.cartoon5 {
-    top: 45%;
-    left: 2%;
-}
-
-
 /* =========================
    CALCULATOR
    ========================= */
