@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ /*background imaage */
+    background-image: url("math-background.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CARTOON EMOJIS
+   ========================= */
+
+.cartoon {
+    position: fixed;
+
+    font-size: 55px;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.cartoon1 {
+    top: 5%;
+    left: 5%;
+}
+
+.cartoon2 {
+    top: 10%;
+    right: 5%;
+}
+
+.cartoon3 {
+    bottom: 8%;
+    left: 5%;
+}
+
+.cartoon4 {
+    bottom: 8%;
+    right: 5%;
+}
+
+.cartoon5 {
+    top: 45%;
+    left: 2%;
+}
+
+
+/* =========================
+   CALCULATOR
+   ========================= */
+
+.calculator {
+    position: relative;
+
+    z-index: 5;
+
+    width: 450px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background-color: rgba(220, 250, 250, 0.88);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+.title {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.title span {
+    font-size: 30px;
+}
+
+.title h1 {
+    margin: 0;
+
+    color: #ff5d73;
+
+    font-size: 30px;
+}
+
+
+/* Smile */
+
+.smile {
+    font-size: 40px;
+
+    margin: 20px 0;
+}
+
+
+/* =========================
+   DISPLAY
+   ========================= */
+
+#display {
+    width: 100%;
+
+    height: 75px;
+
+    margin-bottom: 20px;
+
+    padding: 10px 15px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 15px;
+
+    background-color: #f8f9fa;
+
+    font-size: 30px;
+
+    text-align: right;
+
+    color: #222;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+button {
+    height: 68px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background-color: #ffd166;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+
+button:hover {
+    background-color: #ffb703;
+
+    transform: scale(1.03);
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   CLEAR BUTTON
+   ========================= */
+
+.clear {
+    background-color: #ff8fab;
+}
+
+.clear:hover {
+    background-color: #ff5d8f;
+}
+
+
+/* =========================
+   OPERATOR BUTTONS
+   ========================= */
+
+.operator {
+    background-color: #ffd166;
+}
+
+.operator:hover {
+    background-color: #ffb703;
+}
+
+
+/* =========================
+   EQUAL BUTTON
+   ========================= */
+
+.equal {
+    background-color: #80ed99;
+}
+
+.equal:hover {
+    background-color: #57cc99;
+}
+
+
+/* =========================
+   ZERO BUTTON
+   ========================= */
+
+.zero {
+    grid-column: span 2;
+}
+
+
+/* =========================
+   MESSAGE
+   ========================= */
+
+#message {
+    margin-top: 25px;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   ANIMATION
+   ========================= */
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .calculator {
+        width: 90%;
+
+        max-width: 450px;
+
+        padding: 20px;
+    }
+
+    .cartoon {
+        font-size: 40px;
+    }
+
+    .math-background {
+        font-size: 30px;
+    }
+
+    button {
+        height: 55px;
+
+        font-size: 18px;
+    }
+}
